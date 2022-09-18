@@ -1,5 +1,3 @@
-README
-
 # Introduction
 
 The UFO project is based on the [UFO Sightings dataset](https://www.kaggle.com/datasets/NUFORC/ufo-sightings) uploaded on Kaggle by the National UFO Reporting Center (NUFORC)/ We will be using Microsoft Excel and PostgreSQL for data cleanup. 
