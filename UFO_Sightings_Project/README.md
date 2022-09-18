@@ -128,6 +128,8 @@ The Analysis on Rstudio can be seen on the [UFO_RMD](ProjectDocuments/UFO_RMD.pd
 
 # SHARE
 
+The following dashboard helps us visualize the UFO sightings data. It has a map of all the locations UFO have been seen. It also has graphs on the hour of observation as well as the year of observation. We can filter the data with the filtering options on the left side of the dashboard:
+
 <div class='tableauPlaceholder' id='viz1663528261317' style='position: relative'><noscript><a href='#'>
   <img alt='UFO Sightings Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Dr&#47;DraftUFO_Locations&#47;UFOSightingsDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
   <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DraftUFO_Locations&#47;UFOSightingsDashboard' />
@@ -136,6 +138,7 @@ The Analysis on Rstudio can be seen on the [UFO_RMD](ProjectDocuments/UFO_RMD.pd
   <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
   <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                
 
+If you are having trouble with the embeded view above you can Access dashboard [here](https://public.tableau.com/views/DraftUFO_Locations/UFOSightingsDashboard?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 # ACT
 
