@@ -1,5 +1,3 @@
-README
-
 # Introduction
 The Cyclistic Case Study project is based on one of the Case Studies provided for students of the Google Data Analytics Professional Certificate. 
 You can learn more about this Case Study [here](Cycyclistic_Case_Study/Cyclistic_Case_Study.pdf).
