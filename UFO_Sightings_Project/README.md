@@ -68,6 +68,7 @@ We now have our data ready for cleanup and analysis
 # ANALYZE
 With our data imported into SQL we are ready for analysis. Our Analysis will be based on the guide questions in the ASK section of this document.
 
+## SQL
 ```sql
 --We are interested in working with the date the UFO was observed. However on our table the datetime column
 --is a string datatype and containts also time data. Fois this data clean up we use the substring as well as
@@ -122,10 +123,10 @@ COPY( SELECT COUNT(*) AS county_sighting_count, country_clean FROM ufo_sightings
 GROUP BY country_clean
 ORDER BY county_sighting_count DESC) TO 'C:\Users\Public\country_Sighting_info.csv' CSV HEADER
 ```
-
+## Rstudio
 The Analysis on Rstudio can be seen on the [UFO_RMD](UFO_RMD.pdf) file
 
-## SHARE
+# SHARE
 
 <div class='tableauPlaceholder' id='viz1663528261317' style='position: relative'><noscript><a href='#'>
   <img alt='UFO Sightings Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Dr&#47;DraftUFO_Locations&#47;UFOSightingsDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
@@ -136,7 +137,7 @@ The Analysis on Rstudio can be seen on the [UFO_RMD](UFO_RMD.pdf) file
   <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                
 
 
-## ACT
+# ACT
 
 Comming soon...
 
