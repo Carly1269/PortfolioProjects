@@ -1,0 +1,17 @@
+--First we need to create the UFO_Sightings table in SQL. We do this by executing the following query
+
+CREATE TABLE UFO_Sightings (sighting_id serial,
+                           datetime varchar(255),
+                           city varchar(255),
+                           stateid varchar(255),
+                           country varchar(255),
+                           country_clean varchar(255),
+                           shape varchar(255),
+                           duration_seconds float,
+                           duration_hrs_min varchar(255),
+                           comments varchar(255),
+                           date_posted varchar(255),
+                           latitude float,
+                           longitude float,
+                           PRIMARY KEY (sighting_id))
+                      

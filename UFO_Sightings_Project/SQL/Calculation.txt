@@ -1,0 +1,52 @@
+--We are interested in working with the date the UFO was observed. However on our table the datetime column
+--is a string datatype and containts also time data. Fois this data clean up we use the substring as well as
+--the to_date functions
+
+SELECT TO_DATE(SUBSTRING(datetime, 0, strpos(datetime,' ')),'MM/DD/YYYY') AS date_observed
+FROM ufo_sightings
+
+--We want to look at the years with the most observations. For that we use a modification of the last query
+
+SELECT EXTRACT(YEAR FROM date_observed) AS year_observed, 
+COUNT(EXTRACT(YEAR from date_observed)) AS number_of_observations
+FROM
+(SELECT (TO_DATE(SUBSTRING(datetime, 0, strpos(datetime,' ')),'MM/DD/YYYY')) AS date_observed,*
+FROM ufo_sightings) AS ufo_sightings_clean_year
+
+GROUP BY year_observed
+ORDER BY number_of_observations DESC
+
+--We are interested in selecting the msot common observation times.  In this case
+--We will only be taking the hour portion of each observation
+
+SELECT CAST(NULLIF(SUBSTRING(date_observed,0,strpos(date_observed,':')),'') AS integer) AS hour_observed,
+COUNT(*) AS number_of_observations
+FROM
+(SELECT SUBSTRING(datetime, strpos(datetime,' '),
+                  LENGTH(datetime)) AS date_observed, *
+                    FROM ufo_sightings) 
+                    as ufo_sightings_clean_hr
+group by hour_observed
+order by number_of_observations desc
+
+--We are also interested in looking at the states with the most observations
+--NOTE: The state field is only used for USA and Canada observations. Therefore We will exclude NULL
+--values on Stateid
+
+SELECT COUNT(*) AS sate_sighting_count, stateid FROM ufo_sightings
+WHERE stateid IS NOT null
+GROUP BY stateid
+ORDER BY sate_sighting_count DESC
+
+--Lastly we are interested in looking at the countries with the most observations. For that we will use
+--the following query
+
+SELECT COUNT(*) AS county_sighting_count, country_clean FROM ufo_sightings 
+GROUP BY country_clean
+ORDER BY county_sighting_count DESC
+
+--We will then export the results of the data on the queries above to csv files. We will use the COPY function
+--Below is an example on the COPY function used on the Sightings by Country
+COPY( SELECT COUNT(*) AS county_sighting_count, country_clean FROM ufo_sightings 
+GROUP BY country_clean
+ORDER BY county_sighting_count DESC) TO 'C:\Users\Public\country_Sighting_info.csv' CSV HEADER
