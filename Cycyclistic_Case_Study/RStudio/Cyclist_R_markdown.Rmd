@@ -1,0 +1,87 @@
+---
+title: "Google_Analytics_Cycle_Case_Study"
+author: "Carlos_Rivera"
+date: "2022-09-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The first step when running a code in R is to install the necessary packages. In this case we will be using the tidyverse package. To install the latest version of this package we run the chunk below:
+
+```{r tidyverse_install}
+install.packages("tidyverse",repos = "http://cran.us.r-project.org")
+```
+
+We then load the tidyverse package
+
+```{r tidyverse_load}
+library("tidyverse")
+```
+
+## Data Import
+
+We will then need to import the data we have calculated in SQL we can do this with the read_csv() function
+
+```{r data_import}
+ride_information <-read.csv("https://www.dropbox.com/s/3agtk4eam3oqtn8/ride_information.csv?dl=1", header=TRUE, stringsAsFactors=FALSE)
+```
+
+We then print the data to check on the data types
+
+```{r}
+print(ride_information)
+```
+As we can see the ride_length value is a chr type. We need to change the data type to a period format for that we will need to install the lubridate package. We do that with the chunk below
+
+```{r}
+install.packages("lubridate",repos = "http://cran.us.r-project.org")
+```
+We then run the package
+
+```{r}
+library("lubridate")
+```
+
+We will then use the hms() function in lubridate. This changes the data_type of ride_length to the period data type:
+
+
+```{r}
+ride_information$ride_length<- hms(ride_information$ride_length)
+```
+We then print the data again to confirm our results
+
+```{r}
+print(ride_information)
+```
+
+We can confirm that the ride_length column is now on a period data type. We can now proceed with our analysis
+
+## Data Graphing
+For our analysis we will first graph the number of rides per day. Regardless of the user type 
+```{r}
+ggplot(data =ride_information, mapping = aes(x=day_of_the_week))+ geom_bar()+labs(title = "Number of Rides per Day",x="Day of the Week",y="Total Rides")
+
+```
+
+We will then create a box plot of the data for each user type. This will help us see if there are any outliers in the data
+
+```{r}
+ggplot(data =ride_information, mapping = aes(y=ride_length))+ geom_boxplot()+ facet_wrap(~member_casual)+labs(title = "Ride Length per User Type Boxplot",y="Ride Length")
+```
+
+We will then look the the number of trips for each day divided by the user type: member or casual
+
+```{r}
+ggplot(data =ride_information, mapping = aes(x=day_of_the_week))+ geom_bar()+ facet_wrap(~member_casual)+labs(title = "Number of Rides per Day",x="Day of the Week",y="Total Rides")+theme(axis.text.x = element_text(size = 10, angle = 45,hjust=1))
+```
+
+We will then look the total ride time by day divided by user type: member or casual
+
+
+```{r}
+ggplot(data =ride_information, mapping = aes(x=day_of_the_week , y=ride_length))+ geom_histogram(stat = "identity")+ facet_wrap(~member_casual)+theme(axis.text.x = element_text(size = 10, angle = 45,hjust=1))+labs(title = "Number of Rides per Day by User Type",x="Day of the Week",y="Total Rides")
+```
+
