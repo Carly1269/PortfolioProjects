@@ -28,7 +28,7 @@ Looking at the data we see that these abbreviations are used for states/province
 used for sightings in these countries. We can easily add the country to these lines using the SWITCH excel function. We will use the switch function in this case. 
 We will create a new column called Country Clean for this.
 
-![Excel_Picture1](Excel_Picture1.png)
+![Excel_Picture1](ProjectDocuments/Excel_Picture1.png)
 
 Below is the code used in Excel referincing the C2 cell:
 ```excel
@@ -37,7 +37,7 @@ Below is the code used in Excel referincing the C2 cell:
 If we select only “au”,”gb”,”de” in the countries we see that there are a couple of entries of states that have a country outside the US and Canada. 
 Since the quantity is so small, we manually change those:
 
-![Excel_Picture2](Excel_Picture2.png)
+![Excel_Picture2](ProjectDocuments/Excel_Picture2.png)
 
 ## SQL
 The next step in our analysis create our table in SQL:
@@ -124,7 +124,7 @@ GROUP BY country_clean
 ORDER BY county_sighting_count DESC) TO 'C:\Users\Public\country_Sighting_info.csv' CSV HEADER
 ```
 ## Rstudio
-The Analysis on Rstudio can be seen on the [UFO_RMD](UFO_RMD.pdf) file
+The Analysis on Rstudio can be seen on the [UFO_RMD](ProjectDocuments/UFO_RMD.pdf) file
 
 # SHARE
 
