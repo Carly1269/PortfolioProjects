@@ -12,8 +12,7 @@ The questions that will guide our analysis are:
 3. How can we map the observation data?
 
 # PREPARE
-We will first need to download the data. The data is sourced from the following link:
-Link to Data source: https://www.kaggle.com/datasets/NUFORC/ufo-sightings
+We will first need to download the data. The data is sourced from [here](https://www.kaggle.com/datasets/NUFORC/ufo-sightings)
 
 # PROCESS
 To process our data, we will be using Excel and SQL for data cleanup.  We will also use RStudio and Tableau for Visualization
@@ -61,8 +60,8 @@ CREATE TABLE UFO_Sightings (sighting_id serial,
                            PRIMARY KEY (sighting_id))
 ```
 
-The third step is importing the data into our newly created table. We do this using the Import CSV file into a table using pgAdmin section of the following link:
- https://www.postgresqltutorial.com/postgresql-tutorial/import-csv-file-into-posgresql-table/
+The third step is importing the data into our newly created table. We do this using [this instructions](https://www.postgresqltutorial.com/postgresql-tutorial/import-csv-file-into-posgresql-table/).
+
 We now have our data ready for cleanup and analysis
 
 # ANALYZE
