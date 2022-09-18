@@ -27,14 +27,17 @@ If we apply a filter in each column, we can see that there are a couple of lines
 Looking at the data we see that these abbreviations are used for states/provinces in the US and Canada. Therefore, we conclude that this column is only 
 used for sightings in these countries. We can easily add the country to these lines using the SWITCH excel function. We will use the switch function in this case. 
 We will create a new column called Country Clean for this.
-The code we used id referenced in the Excel_code document.
 
-![alt text](https://github.com/Carly1269/PortfolioProjects/blob/main/UFO_Sightings_Project/Excel_Picture1.png.?raw=true)
+![Excel_Picture1](Excel_Picture1.png)
 
+Below is the code used in Excel referincing the C2 cell:
+```excel
+=SWITCH(C2,"al","us","ak","us","az","us","ar","us","as","us","ca","us","co","us","ct","us","de","us","dc","us","fl","us","ga","us","gu","us","hi","us","id","us","il","us","in","us","ia","us","ks","us","ky","us","la","us","me","us","md","us","ma","us","mi","us","mn","us","ms","us","mo","us","mt","us","ne","us","nv","us","nh","us","nj","us","nm","us","ny","us","nc","us","nd","us","cm","us","oh","us","ok","us","or","us","pa","us","pr","us","ri","us","sc","us","sd","us","tn","us","tx","us","tt","us","ut","us","vt","us","va","us","vi","us","wa","us","wv","us","wi","us","wy","us","ab","ca","bc","ca","mb","ca","nb","ca","nl","ca","nt","ca","ns","ca","nu","ca","on","ca","pe","ca","qc","ca","sk","ca","yt","ca","N/A")
+```
 If we select only “au”,”gb”,”de” in the countries we see that there are a couple of entries of states that have a country outside the US and Canada. 
 Since the quantity is so small, we manually change those:
 
-![alt text](https://github.com/Carly1269/PortfolioProjects/blob/main/UFO_Sightings_Project/Excel_Picture2.png.?raw=true)
+![Excel_Picture2](Excel_Picture2.png)
 
 ## SQL
 The next step in our analysis create our table in SQL:
@@ -120,7 +123,7 @@ GROUP BY country_clean
 ORDER BY county_sighting_count DESC) TO 'C:\Users\Public\country_Sighting_info.csv' CSV HEADER
 ```
 
-For our analysis in RStudio we will open the UFO_RMD_file.
+The Analysis on Rstudio can be seen on the [UFO_RMD](UFO_RMD.pdf) file
 
 ## SHARE
 
