@@ -1,0 +1,55 @@
+/*We Want to know which day of the week has the most ammount of activity with usage. For that we will
+need to calculate the length of each ride. We also want to know which day of the week has the most usage
+Finally we want to categorize this data by member/casual*/  
+
+SELECT (ended_at - started_at) AS ride_length,
+CASE WHEN EXTRACT(dow FROM started_at) =0 THEN 'Monday'
+WHEN EXTRACT(dow FROM ended_at) =1 THEN 'Tuesday'
+WHEN EXTRACT(dow FROM ended_at) =2 THEN 'Wednesday'
+WHEN EXTRACT(dow FROM ended_at) =3 THEN 'Thursday'
+WHEN EXTRACT(dow FROM ended_at) =4 THEN 'Friday'
+WHEN EXTRACT(dow FROM ended_at) =5 THEN 'Saturday'
+ELSE 'Sunday' END AS day_of_the_week,
+member_casual
+FROM tripdata;
+
+/*We now want to calculate sumary of statistics for the data such as max,minimum,mean values 
+per user type: member/casual. For this we create a temporary table with the previous query 
+results and take the values from it*/  
+
+WITH ride_information AS (SELECT (ended_at - started_at) AS ride_length,
+CASE WHEN EXTRACT(dow FROM started_at) =0 THEN 'Monday'
+WHEN EXTRACT(dow FROM ended_at) =1 THEN 'Tuesday'
+WHEN EXTRACT(dow FROM ended_at) =2 THEN 'Wednesday'
+WHEN EXTRACT(dow FROM ended_at) =3 THEN 'Thursday'
+WHEN EXTRACT(dow FROM ended_at) =4 THEN 'Friday'
+WHEN EXTRACT(dow FROM ended_at) =5 THEN 'Saturday'
+ELSE 'Sunday' END AS day_of_the_week,
+member_casual
+FROM tripdata)
+
+
+SELECT MIN(ride_length),
+MAX(ride_length), 
+AVG(ride_length), 
+member_casual 
+FROM ride_information 
+group by member_casual;
+
+/*This query calculates the days with the most number of rides regardless of the user type*/  
+
+SELECT COUNT(day_of_the_week),
+day_of_the_week
+FROM ride_information 
+group by day_of_the_week
+order by COUNT(day_of_the_week)
+
+/*This query calculates the days with the most number of rides divided by user type: member/casual*/  
+
+SELECT COUNT(day_of_the_week),
+day_of_the_week,
+member_casual 
+FROM ride_information 
+group by day_of_the_week, member_casual
+order by COUNT(day_of_the_week)
+
