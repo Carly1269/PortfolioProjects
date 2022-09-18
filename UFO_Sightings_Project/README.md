@@ -2,7 +2,8 @@ README
 
 # Introduction
 
-The UFO project is based on the UFO Sightings dataset uploaded on Kaggle by the National UFO Reporting Center (NUFORC)/ We will be using Microsoft Excel and PostgreSQL for data cleanup. We will also be using PostgreSQL and RStudio for manipulating the Data. We will then use Tableau Public for Data Visualization.
+The UFO project is based on the UFO Sightings dataset uploaded on Kaggle by the National UFO Reporting Center (NUFORC)/ We will be using Microsoft Excel and PostgreSQL for data cleanup. 
+We will also be using PostgreSQL and RStudio for manipulating the Data. We will then use Tableau Public for Data Visualization.
 
 # ASK
 The questions that will guide our analysis are:
@@ -63,6 +64,7 @@ We now have our data ready for cleanup and analysis
 
 # ANALYZE
 With our data imported into SQL we are ready for analysis. Our Analysis will be based on the guide questions in the ASK section of this document.
+
 ```sql
 --We are interested in working with the date the UFO was observed. However on our table the datetime column
 --is a string datatype and containts also time data. Fois this data clean up we use the substring as well as
