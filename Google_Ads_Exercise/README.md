@@ -1557,23 +1557,14 @@ Google_Ads_df_filtered_days = Google_Ads_df_filtered.groupby(['Day']).sum(numeri
 Google_Ads_df_filtered_days.head(n=10)
 ```
 
-
-
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
+      <th>Day</th>
       <th>Cost</th>
       <th>Views</th>
       <th>Impressions</th>
       <th>Clicks</th>
-    </tr>
-    <tr>
-      <th>Day</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
