@@ -1,4 +1,4 @@
-## Googe Ads Analysis
+### Googe Ads Analysis in Python
 For the first step of this exercise we need to import the pandas, numpy and datetime libraries for that we use the code below:
 
 
@@ -1654,3 +1654,6 @@ Google_Ads_df_filtered.to_csv("C:/Users/simpl/Desktop/Google_Ads/Google_Ads_df_f
 Google_Ads_df_filtered_days.to_csv("C:/Users/simpl/Desktop/Google_Ads/Google_Ads_df_filtered_days.csv")
 Google_Ads_df_filtered_views.to_csv("C:/Users/simpl/Desktop/Google_Ads/Google_Ads_df_filtered_views.csv")
 ```
+## Tableau Analysis
+
+You can acess the analysis on Tableau here
