@@ -159,8 +159,7 @@ Google_Ads_df.dtypes
 
 We will then create a new column for the  'Google_Ads_df dataframe called product_Type. This column will follow the logic below:
 
-
-![Screenshot 2022-11-06 131135](Screenshot 2022-11-06 131135.png)
+![Logic_Table](Logic_Table.png)
 
 
 We do that with the following code:
