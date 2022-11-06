@@ -181,7 +181,7 @@ def product_type_function(col):
 Google_Ads_df['product_type'] = Google_Ads_df.apply (lambda col: product_type_function (col), axis=1)
 ```
 
-We will then preview the first 50 items to see if the code above is workign correctly:
+We will then preview the first 50 items to see if the code above is working correctly:
 
 
 ```python
