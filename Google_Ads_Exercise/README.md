@@ -9,6 +9,7 @@ our results. The dataset can be downloaded by [clicking here]([https://public.ta
 For the purpose of this project we will be using **Python** with the **NumPy** and **Pandas** libaries. We will also use the datetime library for some data type conversions.
 
 ## ASK
+
 There are some specific questions that need to be anwered for this dataset. We first need to clasify each campaign by **Product Type** this needs to be done with the following logic:
 
 ![Logic_Table](Logic_Table.png)
@@ -19,6 +20,7 @@ We will then export this data into **Tableau** where we will provide a visual el
 
 
 ## Python
+### Preparing the dataset
 
 For the first step of this exercise we need to import the pandas, numpy and datetime libraries for that we use the code below:
 
@@ -176,7 +178,7 @@ Google_Ads_df.dtypes
     Clicks                                 int64
     dtype: object
 
-
+### Analysis using python
 
 We will then create a new column for the  'Google_Ads_df dataframe called product_Type. This column will follow the logic below:
 
