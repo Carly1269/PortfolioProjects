@@ -1,4 +1,25 @@
 # Googe Ads Analysis in Python
+
+
+## Introduction
+
+For this project we are working on the analytics of a large digital marketing company. They need to analyze the data for the performance of their advertsisements on the Google Ads platform. They need for us to also create a Tableau dashboard with 
+our results. The dataset can be downloaded by [clicking here]([https://public.tableau.com/views/GoogleAdsAnalysis_16677685019630/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link](https://www.dropbox.com/s/3uz9skvo96lxtpg/Google_Ads_Dataset.csv?dl=1)
+
+For the purpose of this project we will be using **Python** with the **NumPy** and **Pandas** libaries. We will also use the datetime library for some data type conversions.
+
+## ASK
+There are some specific questions that need to be anwered for this dataset. We first need to clasify each campaign by **Product Type** this needs to be done with the following logic:
+
+![Logic_Table](Logic_Table.png)
+
+After each campaign is clasified we then need to find which campaign had the most views for **Q1(Jan 1 -March 31)** for the **TrueView** Product Type. We also need to find which day had the most views for the same Product Type.
+
+We will then export this data into **Tableau** where we will provide a visual elements to help us understand how the data behaves
+
+
+## Python
+
 For the first step of this exercise we need to import the pandas, numpy and datetime libraries for that we use the code below:
 
 
