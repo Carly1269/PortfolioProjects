@@ -16,7 +16,7 @@ There are some specific questions that need to be anwered for this dataset. We f
 
 After each campaign is clasified we then need to find which campaign had the most views for **Q1(Jan 1 -March 31)** for the **TrueView** Product Type. We also need to find which day had the most views for the same Product Type.
 
-We will then export this data into **Tableau** where we will provide a visual elements to help us understand how the data behaves
+We will then export this data into **Tableau** where we will provide visual elements to help us understand the data
 
 
 ## Python
