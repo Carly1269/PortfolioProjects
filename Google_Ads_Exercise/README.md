@@ -888,7 +888,7 @@ With the code above working correctly We then want to know the campaigns in Q1 (
 
 
 ```python
-Google_Ads_df_filtered = Google_Ads_df.loc[(Google_Ads_df['Day'] >= '2022-01-01')& (Google_Ads_df['Day'] < '2022-03-31')]
+Google_Ads_df_filtered = Google_Ads_df.loc[(Google_Ads_df['Day'] >= '2022-01-01')& (Google_Ads_df['Day'] <= '2022-03-31')]
 
 Google_Ads_df_filtered_views = Google_Ads_df_filtered.sort_values(['Views'], ascending = [False])
 
