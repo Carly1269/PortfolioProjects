@@ -200,7 +200,7 @@ def product_type_function(col):
     elif( col['Ad_group_type'] == "Bumper"):
         return "Bumper"
     else:
-        return "In-feed video"
+        return "Video Discovery"
 Google_Ads_df['product_type'] = Google_Ads_df.apply (lambda col: product_type_function (col), axis=1)
 ```
 
@@ -1692,7 +1692,7 @@ the **Cost per Campaign Views** filter
 ### Total Cost per Campaign Product Type
 
 This Graph compares the Total cost per each Product Type. We can see that the **TrueView** Product Type has the largest Cost at **13,308,235** USD. The
-Product Type with the least cost is **In-feed-video** with a cost of **481,148** USD. We can filter this graph with the **Total Cost Month Filter**
+Product Type with the least cost is **Video Discovery** with a cost of **481,148** USD. We can filter this graph with the **Total Cost Month Filter**
 
 ### Impresions per Campaign
 
