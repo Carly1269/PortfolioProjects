@@ -1659,3 +1659,10 @@ Google_Ads_df_filtered_views.to_csv("C:/Users/simpl/Desktop/Google_Ads/Google_Ad
 You can acess the analysis the dashboard on Tableau by [clicking here](https://public.tableau.com/views/GoogleAdsAnalysis_16677685019630/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 <div class='tableauPlaceholder' id='viz1667834077046' style='position: relative'><noscript><a href='#'><img alt='Google Ads Analysis ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Go&#47;GoogleAdsAnalysis_16677685019630&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GoogleAdsAnalysis_16677685019630&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Go&#47;GoogleAdsAnalysis_16677685019630&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+
+
+# Cost Per Campaign Views
+
+This scatter plot graphs each campaign comparing the Total views on each campaign wit the cost in USD. 
+We can see that the graph has a positive correlation. The more money is spent on each campaign the more Views are generated for that campaign.
+The data can be filtered by month using the *Cost per Campaign Views* filter
