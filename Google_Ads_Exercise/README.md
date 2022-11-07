@@ -1663,6 +1663,18 @@ You can acess the analysis the dashboard on Tableau by [clicking here](https://p
 
 ### Cost Per Campaign Views
 
-This scatter plot graphs each campaign comparing the Total views on each campaign wit the cost in USD. 
-We can see that the graph has a positive correlation. The more money is spent on each campaign the more Views are generated for that campaign.
-The data can be filtered by month using the **Cost per Campaign Views** filter
+This scatter plot graphs each campaign comparing the Total views on each campaign wit the cost in USD. We can see that the graph has a **positive correlation**. The more money is spent on each campaign the more Views are generated for that campaign.The data can be filtered by month using 
+the **Cost per Campaign Views** filter
+
+### Total Cost per Campaign Product Type
+
+This Graph compares the Total cost per each Product Type. We can see that the **TrueView** Product Type has the largest Cost at **13,308,235** USD. The
+Product Type with the least cost is **In-feed-video** with a cost of **481,148** USD. We can filter this graph with the **Total Cost Month Filter**
+
+### Impresions per Campaign
+
+This helps us vizualize how many impressions each campaign had (How many times an advertisement was displayed). We can see the largest impressions was the
+**YT_Adult_Bumpers_Q1'22 PL037374 In Person Teacher** it had a total of **81,886,722** impressions. We can filter this vizualization with the **Impressions per Campaign** filter
+
+
+
