@@ -19,8 +19,6 @@ What is the best and worst rated season? In IMDB, Rotten Tomatoes and Metatritic
 ## Python
 ### Preparing the dataset
 
-
-
  "text/html": [
        "<div>\n",
        "<style scoped>\n",
