@@ -18,6 +18,8 @@ What is the best and worst rated season? In IMDB, Rotten Tomatoes and Metatritic
 
 ## Python
 ### Preparing the dataset
+
+```html
  "text/html": [
        "<div>\n",
        "<style scoped>\n",
@@ -172,3 +174,4 @@ What is the best and worst rated season? In IMDB, Rotten Tomatoes and Metatritic
        "  </tbody>\n",
        "</table>\n",
        "</div>"
+```
