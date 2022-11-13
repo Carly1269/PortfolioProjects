@@ -40,23 +40,6 @@ In the previouse cell we named our dataframe 'GoT_df'. We use the .head() method
 GoT_df.head()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -367,23 +350,4 @@ We can export the dataframes for further analysis elsewhere
 GoT_df_Season_Info_Views.to_csv("C:/Users/simpl/Desktop/GoT/GoT_df_Season_Info_Views.csv")
 GoT_df_Season_Info_Time.to_csv("C:/Users/simpl/Desktop/GoT/GoT_df_Season_Info_Time.csv")
 GoT_df_Season_Info_Ratings.to_csv("C:/Users/simpl/Desktop/GoT/GoT_df_Season_Info_Ratings.csv")
-```
-
-
-    ---------------------------------------------------------------------------
-
-    AttributeError                            Traceback (most recent call last)
-
-    Cell In [14], line 3
-          1 GoT_df_Season_Info_Views.to_csv("C:/Users/simpl/Desktop/GoT/GoT_df_Season_Info_Views.csv")
-          2 GoT_df_Season_Info_Time.to_csv("C:/Users/simpl/Desktop/GoT/GoT_df_Season_Info_Time.csv")
-    ----> 3 GoT_df_Season_Info_Ratings.to_csv("C:/Users/simpl/Desktop/GoT/GoT_df_Season_Info_Ratings.csv")
-    
-
-    AttributeError: 'tuple' object has no attribute 'to_csv'
-
-
-
-```python
-
 ```
