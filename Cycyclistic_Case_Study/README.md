@@ -190,9 +190,4 @@ TO 'C:\Users\Public\ride_information_per_user_per_day.csv' CSV HEADER
 ## RStudio
 The Analysis on Rstudio can be seen on the [Cyclist_RMD](RStudio/Cyclist_RMD.pdf) file
 
-# SHARE
-Coming soon
-# ACT
-Coming soon
-
 
