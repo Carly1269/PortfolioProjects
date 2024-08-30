@@ -136,8 +136,3 @@ The following dashboard helps us visualize the UFO sightings data. It has a map 
   <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                
 
 If you are having trouble with the embeded view above you can Access dashboard [here](https://public.tableau.com/views/DraftUFO_Locations/UFOSightingsDashboard?:language=en-US&:display_count=n&:origin=viz_share_link)
-
-# ACT
-
-Comming soon...
-
