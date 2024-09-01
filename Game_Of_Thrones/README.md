@@ -347,7 +347,7 @@ We can export the dataframes for further analysis elsewhere
 
 
 ```python
-GoT_df_Season_Info_Views.to_csv("C:/Users/simpl/Desktop/GoT/GoT_df_Season_Info_Views.csv")
-GoT_df_Season_Info_Time.to_csv("C:/Users/simpl/Desktop/GoT/GoT_df_Season_Info_Time.csv")
-GoT_df_Season_Info_Ratings.to_csv("C:/Users/simpl/Desktop/GoT/GoT_df_Season_Info_Ratings.csv")
+GoT_df_Season_Info_Views.to_csv("GoT_df_Season_Info_Views.csv")
+GoT_df_Season_Info_Time.to_csv("GoT_df_Season_Info_Time.csv")
+GoT_df_Season_Info_Ratings.to_csv("GoT_df_Season_Info_Ratings.csv")
 ```
