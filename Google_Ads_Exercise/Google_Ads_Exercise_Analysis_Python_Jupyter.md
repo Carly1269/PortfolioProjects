@@ -1725,7 +1725,7 @@ We will then export the dataframes to csv files for further analysis on Tableau.
 
 
 ```python
-Google_Ads_df.to_csv("Google_Ads/Google_Ads_df.csv")
+Google_Ads_df.to_csv("Google_Ads_df.csv")
 Google_Ads_df_filtered.to_csv("Google_Ads_df_filtered.csv")
 Google_Ads_df_filtered_days.to_csv("Google_Ads_df_filtered_days.csv")
 Google_Ads_df_filtered_views.to_csv("Google_Ads_df_filtered_views.csv")
